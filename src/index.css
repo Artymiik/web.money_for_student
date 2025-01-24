@@ -9,7 +9,7 @@
 
   color-scheme: light dark;
   color: rgba(0, 0, 0, 0.87);
-  background-color: #ebebeb;
+  background-color: #f3f3f3;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -78,5 +78,5 @@ input {
   padding: 0.6rem 2rem 0.6rem 1.2rem;
   font-size: 13px;
   outline: none;
-  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.07);
+  box-shadow: 0 0 13px 0 rgba(73, 73, 73, 0.07);
 }

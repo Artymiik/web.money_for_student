@@ -1,4 +1,6 @@
+import { content } from '@/../content/content';
 import Header from "@/components/Header"
+import PostCard from '@/components/PostCard';
 import LeftPanel from "@/components/ui/LeftPanel"
 
 const Home = () => {
@@ -6,11 +8,13 @@ const Home = () => {
         <>
             <Header navigation={["home", "blog", 'left side']} />
 
-            <div className="flex gap-5 mt-[8.5rem] mx-[20vw]">
+            <div className="flex gap-5 mt-[8.5rem] mx-[18vw]">
                 <LeftPanel />
 
-                <div>
-                    <p>sdfsdfsdfsdfs sdf sdf sdf</p>
+                <div className="flex flex-wrap gap-5">
+                    {content.map((item, index) => (
+                        <PostCard index={index} content={item} />
+                    ))}
                 </div>
             </div>
         </>
