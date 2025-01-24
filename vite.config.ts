@@ -10,5 +10,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  // base: "/web.money_for_student",
+  base: "/web.money_for_student",
 });
