@@ -17,7 +17,7 @@ const PostCard = ({ index, content }: Props) => {
             style={{ boxShadow: '0 0 15px 0 rgba(73, 73, 73, 0.16)' }}
         >
             <Link to={`/post/${content.id}`}>
-                <img src="src/assets/default_image.jpg"
+                <img src="web.money_for_student/src/assets/default_image.jpg"
                     alt=""
                     className={`${isHover ? "scale-[1.1]" : "scale-[1]"} transition rounded-md max-h-[10vw] w-full object-cover`}
                 />

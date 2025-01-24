@@ -3,7 +3,7 @@ import * as pages from '@/pages/export.default';
 
 const App = createBrowserRouter([
   {
-    path: "/",
+    path: "/web.money_for_student/",
     children: [
       {
         path: "",
