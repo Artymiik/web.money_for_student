@@ -70,3 +70,13 @@ button {
 button:hover {
   background: var(--color-primary-darken1);
 }
+
+input {
+  width: 100%;
+  background: #fff;
+  border-radius: 3rem;
+  padding: 0.6rem 2rem 0.6rem 1.2rem;
+  font-size: 13px;
+  outline: none;
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.07);
+}
