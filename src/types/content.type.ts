@@ -3,6 +3,7 @@ export type ContentItem = {
   title: string;
   content: {
     section: {
+      img: string;
       paragraph: string;
     };
   }[];

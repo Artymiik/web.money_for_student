@@ -1,0 +1,117 @@
+@media only screen and (max-width: 1832px) {
+  #home__section {
+    margin: 8.5rem 10vw;
+  }
+
+  #header__section {
+    padding: 1.8rem 10vw;
+  }
+
+  #footer__section {
+    padding: 2.5rem 12rem;
+  }
+}
+
+@media only screen and (max-width: 1603px) {
+  #home__section {
+    margin: 8.5rem 5vw;
+  }
+
+  #header__section {
+    padding: 1.8rem 5vw;
+  }
+
+  #footer__section {
+    padding: 2.5rem 6rem;
+  }
+}
+
+@media only screen and (max-width: 1424px) {
+  #home__section {
+    margin: 8.5rem 10vw;
+  }
+
+  #header__section {
+    padding: 1.8rem 10vw;
+  }
+
+  #footer__section {
+    padding: 2.5rem 10rem;
+  }
+
+  #footer__title {
+    font-size: 13px;
+  }
+
+  #footer__graph {
+    font-size: 13px;
+  }
+
+  #footer__timestamp {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 1215px) {
+  #home__section {
+    margin: 8.5rem 5vw;
+  }
+
+  #header__section {
+    padding: 1.8rem 5vw;
+  }
+
+  #footer__section {
+    padding: 2.5rem 4rem;
+  }
+
+  #left__panel {
+    min-width: 19rem;
+  }
+
+  #popular__posts__title__block {
+    font-size: 15px;
+  }
+
+  #popular__post__id {
+    font-size: 16px;
+  }
+
+  #popular__post__title {
+    font-size: 13px;
+  }
+
+  #popular__post__date {
+    font-size: 12px;
+  }
+
+  #block__post {
+    max-width: 280px;
+  }
+
+  #post__title {
+    font-size: 13px;
+  }
+
+  #post__paragraph {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1006px) {
+    #left__panel {
+        display: none;
+    }
+
+    #footer__content {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #footer__content__1 {
+        margin: 0 0;
+    }
+    #footer__content__2 {
+        margin: 0 0;
+    }
+}

@@ -7,12 +7,12 @@ import LeftPanel from "@/components/ui/LeftPanel"
 const Home = () => {
     return (
         <>
-            <Header navigation={["home", "blog", 'left side']} />
+            <Header navigation={[{ page: "посты", href: "/web.money_for_student" }]} />
 
-            <div className="flex gap-5 mt-[8.5rem] mx-[15vw]">
+            <div className="flex gap-5 mt-[8.5rem] mx-[15vw]" id="home__section">
                 <LeftPanel />
 
-                <div className="flex flex-wrap gap-5">
+                <div className="flex flex-wrap gap-5 justify-center content-start">
                     {content.map((item, index) => (
                         <PostCard index={index} content={item} />
                     ))}
