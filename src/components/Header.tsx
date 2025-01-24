@@ -4,8 +4,8 @@ interface Props {
 
 const Header = ({ navigation }: Props) => {
     return (
-        <div className="fixed top-0 w-screen">
-            <div className="flex items-center justify-between px-[18vw] py-[1.8rem] bg-[#fff]" style={{ boxShadow: '0 0 17px 0 rgba(0, 0, 0, 0.04)' }}>
+        <div className="fixed top-0 w-screen z-[1000]">
+            <div className="flex items-center justify-between px-[15vw] py-[1.8rem] bg-[#fff]" style={{ boxShadow: '0 0 17px 0 rgba(0, 0, 0, 0.04)' }}>
                 <div className="font-bold text-[#48387f] opacity-[0.8] text-[18px] hover:opacity-[0.6] cursor-pointer transition">Logo</div>
                 <div className="flex items-center">
                     {navigation.map((item, index) => (

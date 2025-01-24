@@ -14,7 +14,7 @@ const PostCard = ({ index, content }: Props) => {
         <div key={index} className="max-w-[290px] bg-[#fff] rounded-md cursor-pointer overflow-hidden"
             onMouseEnter={() => setIsHover(true)}
             onMouseLeave={() => setIsHover(false)}
-            style={{ boxShadow: '0 0 15px 0 rgba(73, 73, 73, 0.1)' }}
+            style={{ boxShadow: '0 0 15px 0 rgba(73, 73, 73, 0.16)' }}
         >
             <Link to={`/post/${content.id}`}>
                 <img src="src/assets/default_image.jpg"
