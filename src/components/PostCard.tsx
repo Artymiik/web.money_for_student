@@ -1,6 +1,8 @@
+import lazy from "@/lib/lazy";
 import { ContentItem } from "@/types/content.type";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import ImgSkeleton from "./ui/ImgSkeleton";
 
 interface Props {
     index: number;
@@ -9,6 +11,22 @@ interface Props {
 
 const PostCard = ({ index, content }: Props) => {
     const [isHover, setIsHover] = useState(false);
+    const [poster, setPoster] = useState<string>("");
+    const [loaded, setLoaded] = useState<boolean>(false);
+    const imgRef = useRef(null);
+
+    // Загрузка изображения
+    useEffect(() => {
+        const cleanup = lazy.createImageObserver(
+            imgRef,
+            content.content[0].section.img,
+            setPoster,
+            setLoaded
+        );
+
+        return cleanup;
+    }, [content.content[0].section.img]);
+
 
     return (
         <div key={index} className="max-w-[290px] bg-[#fff] rounded-md cursor-pointer overflow-hidden"
@@ -17,11 +35,17 @@ const PostCard = ({ index, content }: Props) => {
             style={{ boxShadow: '0 0 15px 0 rgba(73, 73, 73, 0.16)' }}
             id="block__post"
         >
-            <Link to={`/post/${content.id}`}>
-                <img src={content.content[0].section.img}
-                    alt=""
-                    className={`${isHover ? "scale-[1.1]" : "scale-[1]"} transition rounded-md max-h-[15rem] w-full object-cover`}
-                />
+            <Link to={`/web.money_for_student/post/${content.id}`}>
+                <div ref={imgRef}>
+                    {loaded ? (
+                        <img src={poster}
+                            alt={poster}
+                            className={`${isHover ? "scale-[1.1]" : "scale-[1]"} transition rounded-md min-h-[16rem] max-h-[16rem] w-full object-cover`}
+                        />
+                    ) : (
+                        <ImgSkeleton width={10} height={16} />
+                    )}
+                </div>
 
                 <div className="px-7 pb-7">
                     <p className="text-[13px] text-[#555] mt-4 mb-2 font-normal" id="post__character">Глава {content.id}</p>

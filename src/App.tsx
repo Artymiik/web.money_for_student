@@ -14,7 +14,15 @@ const App = createBrowserRouter([
             <pages.home />
           </Suspense>
         )
-      }
+      },
+      {
+        path: "*",
+        element: (
+          <Suspense fallback={<Skeleton />}>
+            <pages.not_found />
+          </Suspense>
+        ),
+      },
     ]
   }
 ])
