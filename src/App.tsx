@@ -1,5 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import * as pages from '@/pages/export.default';
+import { Suspense } from "react";
+import Skeleton from "./components/ui/Skeleton";
 
 const App = createBrowserRouter([
   {
@@ -8,7 +10,9 @@ const App = createBrowserRouter([
       {
         path: "",
         element: (
-          <pages.home />
+          <Suspense fallback={<Skeleton />}>
+            <pages.home />
+          </Suspense>
         )
       }
     ]

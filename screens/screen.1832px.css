@@ -10,6 +10,10 @@
   #footer__section {
     padding: 2.5rem 12rem;
   }
+
+  #skeleton__home__section {
+    padding: 2.5rem 10vw;
+  }
 }
 
 @media only screen and (max-width: 1603px) {
@@ -24,6 +28,10 @@
   #footer__section {
     padding: 2.5rem 6rem;
   }
+
+  #skeleton__home__section {
+    padding: 2.5rem 5vw;
+  }
 }
 
 @media only screen and (max-width: 1424px) {
@@ -37,6 +45,10 @@
 
   #footer__section {
     padding: 2.5rem 10rem;
+  }
+
+  #skeleton__home__section {
+    padding: 2.5rem 10vw;
   }
 
   #footer__title {
@@ -63,6 +75,10 @@
 
   #footer__section {
     padding: 2.5rem 4rem;
+  }
+
+  #skeleton__home__section {
+    padding: 2.5rem 5vw;
   }
 
   #left__panel {
@@ -99,19 +115,23 @@
 }
 
 @media only screen and (max-width: 1006px) {
-    #left__panel {
-        display: none;
-    }
+  #left__panel {
+    display: none;
+  }
 
-    #footer__content {
-        flex-direction: column;
-        gap: 0;
-    }
+  #skeleton__home__left {
+    display: none;
+  }
 
-    #footer__content__1 {
-        margin: 0 0;
-    }
-    #footer__content__2 {
-        margin: 0 0;
-    }
+  #footer__content {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  #footer__content__1 {
+    margin: 0 0;
+  }
+  #footer__content__2 {
+    margin: 0 0;
+  }
 }
