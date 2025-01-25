@@ -17,7 +17,7 @@ const Header = ({ navigation }: Props) => {
                 <div className="flex items-center">
                     <Link to="/web.money_for_student" className="ml-2 text-[12px] text-[#999] opacity-[0.8] hover:opacity-[1] hover:text-[#777] font-medium uppercase cursor-pointer">дом /</Link>
                     {navigation.map((item, index) => (
-                        <div className="flex items-center">
+                        <div className="flex items-center" key={index}>
                             <Link to={item.href} key={index} className="ml-2 text-[12px] text-[#999] opacity-[0.8] hover:opacity-[1] hover:text-[#777] font-medium uppercase cursor-pointer">{item.page} /</Link>
                         </div>
                     ))}
